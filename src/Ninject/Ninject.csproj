@@ -156,6 +156,7 @@
     <Compile Include="Planning\Bindings\BindingTarget.cs" />
     <Compile Include="Infrastructure\IHaveBinding.cs" />
     <Compile Include="Planning\Bindings\Resolvers\OpenGenericBindingResolver.cs" />
+    <Compile Include="Planning\Bindings\Resolvers\EnumerableResolver.cs" />
     <Compile Include="Planning\Bindings\Resolvers\SelfBindingResolver.cs" />
     <Compile Include="Planning\Bindings\Resolvers\StandardBindingResolver.cs" />
     <Compile Include="Planning\Bindings\Resolvers\IBindingResolver.cs" />
