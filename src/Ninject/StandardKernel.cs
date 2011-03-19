@@ -67,9 +67,10 @@ namespace Ninject
             Components.Add<IBindingResolver, StandardBindingResolver>();
             Components.Add<IBindingResolver, OpenGenericBindingResolver>();
 
-            Components.Add<IMissingBindingResolver, EnumerableResolver>();
             Components.Add<IMissingBindingResolver, DefaultValueBindingResolver>();
             Components.Add<IMissingBindingResolver, SelfBindingResolver>();
+
+            Components.Add<ILastChanceResolver, EnumerableLastChanceResolver>();
 
 #if !NO_LCG
             if (!Settings.UseReflectionBasedInjection)

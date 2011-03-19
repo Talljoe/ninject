@@ -91,6 +91,8 @@
     <Compile Include="Infrastructure\Language\ExtensionsForMemberInfo.cs" />
     <Compile Include="Infrastructure\ReferenceEqualWeakReference.cs" />
     <Compile Include="Planning\Bindings\Resolvers\DefaultValueBindingResolver.cs" />
+    <Compile Include="Planning\Bindings\Resolvers\EnumerableLastChanceResolver.cs" />
+    <Compile Include="Planning\Bindings\Resolvers\ILastChanceResolver.cs" />
     <Compile Include="Planning\Bindings\Resolvers\IMissingBindingResolver.cs" />
     <Compile Include="Infrastructure\Disposal\IDisposableObject.cs" />
     <Compile Include="OnePerRequestModule.cs" />
@@ -156,7 +158,6 @@
     <Compile Include="Planning\Bindings\BindingTarget.cs" />
     <Compile Include="Infrastructure\IHaveBinding.cs" />
     <Compile Include="Planning\Bindings\Resolvers\OpenGenericBindingResolver.cs" />
-    <Compile Include="Planning\Bindings\Resolvers\EnumerableResolver.cs" />
     <Compile Include="Planning\Bindings\Resolvers\SelfBindingResolver.cs" />
     <Compile Include="Planning\Bindings\Resolvers\StandardBindingResolver.cs" />
     <Compile Include="Planning\Bindings\Resolvers\IBindingResolver.cs" />

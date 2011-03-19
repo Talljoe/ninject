@@ -55,6 +55,7 @@ namespace Ninject.Planning.Bindings.Resolvers
         protected virtual bool TypeIsSelfBindable(Type service)
         {
             return !service.IsInterface
+                   && !service.IsArray
                    && !service.IsAbstract
                    && !service.IsValueType
                    && service != typeof(string)

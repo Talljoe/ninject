@@ -349,6 +349,14 @@ namespace Ninject
 
             if (!resolveBindings.Any())
             {
+                var objects = this.Components.GetAll<ILastChanceResolver>()
+                                             .Select(r => r.Resolve(request))
+                                             .FirstOrDefault(o => o.Any());
+                if(objects != null)
+                {
+                    return objects;
+                }
+
                 if (request.IsOptional)
                 {
                     return Enumerable.Empty<object>();
